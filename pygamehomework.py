@@ -68,9 +68,9 @@ class ImgLoad():
     def __init__(self):
         self.consts = Consts()
         try:
-            original_player_image = pygame.image.load('player_plane.png').convert_alpha()
+            original_player_image = pygame.image.load('img\\player_plane.png').convert_alpha()
             self.player_image = pygame.transform.scale(original_player_image, (self.consts.player_size, self.consts.player_size))
-            original_missile_image = pygame.image.load('missile.png').convert_alpha()
+            original_missile_image = pygame.image.load('img\\missile.png').convert_alpha()
             self.missile_image = pygame.transform.scale(original_missile_image, (32, 64)) 
         except pygame.error as e:
             print(f"Error loading image: {e}")
